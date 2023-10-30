@@ -1,0 +1,101 @@
+.side-nav{
+    box-shadow: 8px 8px 6px lightgray;
+    width: max-content;
+    padding: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+}
+.inp{
+    display: flex;
+    flex-direction: column;
+}
+.border{
+    border-right: 2px solid gray;
+    
+}
+.inp-range{
+    display:flex;
+    flex-direction:row;
+    gap: 10rem;
+    font-size: 12px;
+}
+.inp-val{
+    display:flex ;
+    align-items: center;
+    margin-top: 4px;
+}
+
+/* Remove default styles for radio inputs */
+input[type="radio"].custom-radio{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+}
+
+/* Create a square shape for radio inputs */
+input[type="radio"].custom-radio::before {
+    content: '';
+    display: flex;
+    justify-content: center;
+    width: 20px; /* Adjust the width to make it square */
+    height: 20px; /* Adjust the height to make it square */
+    border: 1px solid black; /* Border for the square */
+    border-radius: 4px; /* To round the corners */
+    margin-right: 6px; /* Adjust the spacing between the radio and label */
+    vertical-align: middle;/* Vertically align the square with text*/
+}
+
+/* Style the square shape when the radio input is checked */
+input[type="radio"].custom-radio:checked::before {
+    background-color: #00ffa2; /* Color when checked */
+    content: '\2713';
+    
+}
+input[type="radio"].custom-radio:not(:checked)::before {
+    content: ''; /* Clear the content when unchecked */
+}
+.custom-range {
+    -webkit-appearance: none; /* Remove default styles for Webkit browsers */
+    appearance: none;
+    width: 100%; /* Set the width of the range input */
+    height: 6px; /* Set the height of the track */
+    background: #ccc; /* Background color of the track */
+    border-radius: 5px; /* Round the corners of the track */
+    cursor: pointer;
+  }
+.custom-range::-webkit-slider-thumb, .custom-range::-moz-range-thumb{
+  -webkit-appearance: none; /* Remove default styles for Webkit browsers */
+  appearance: none;
+  width: 7px; /* Set the width of the thumb */
+  height: 7px; /* Set the height of the thumb */
+  background: #007BFF; /* Color of the thumb */
+  border: 2px solid #0056b3; /* Border for the thumb */
+  border-radius: 50%; /* Make the thumb round */
+  cursor: pointer; /* Show a pointer cursor on hover */
+}
+.custom-range::-webkit-slider-runnable-track,
+.custom-range::-moz-range-track {
+  width: 100%; /* Set the width to 100% to extend the background */
+  height: 6px; /* Set the height of the track */
+  border-radius: 5px; /* Round the corners of the track */
+  background: linear-gradient(to right, #15ff00, #0056b3); 
+
+}
+.pay-type{
+    width: 13rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+

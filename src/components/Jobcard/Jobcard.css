@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.card{
+    box-shadow: 5px 5px 8px gray;
+    gap: 2rem;
+}
+.card-top{
+    display: flex;
+    gap: 3rem;
+}
+.card-bottom{
+    display: flex;
+}
+.job-title{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    width: 80rem;
+    
+}
+.job-title-1{
+    font-weight: 700;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+.job-title-3{
+    color: gray;
+    font-size: smaller;
+}
+.card{
+    padding: 1rem;
+    border-radius: 5px;
+    margin: 2rem;
+    border:2px solid transparent ;
+    transition: border 0.5s ;
+}
+.card:hover{
+    border: 2px solid rgb(55, 106, 118);
+}
+.card-img{
+   
+    height: 5rem;
+    width: 5rem;
+    background-size: cover;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-img img{
+  height: 4rem;
+}
+.card-bottom{
+    gap: 2rem;
+}
+.experience-out{
+    background-color:rgb(225, 225, 96);
+    border-radius: 7px;
+}
+.experience{
+    background-color:rgb(225, 225, 96);
+    padding: 2px;
+    border-radius: 7px;
+    border: 2px solid white;
+    margin: 3px;
+}
+.experience label{
+    font-weight: 600;
+}
+.salary-out{
+    background-color:rgb(154, 228, 89);
+    border-radius: 7px;
+}
+.salary{
+    padding: 2px;
+    border-radius: 7px;
+    border: 2px solid white;
+    margin: 3px;
+}
+.dropdown-i{
+    font-size: 1.5rem;
+    
+    cursor: pointer;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dropdown-i:hover{
+    font-size: 1.8rem;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.info h3{
+    color: gray;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+.info p{
+    margin-top: 0.4rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.apply{
+    border: 2px solid  rgb(36, 100, 132);
+    background-color: rgb(52, 116, 148);
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size:12px ;
+    width: 7rem;
+    height: 2.5rem;
+}
+.apply:hover{
+    border: 2px solid  rgb(23, 71, 96);
+    font-size:14px;
+
+}
+.btn{
+    height: 3rem;
+    display: flex;
+    align-items: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
